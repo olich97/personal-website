@@ -14,14 +14,7 @@ jobs:
 
      # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-
-    # Step 1 - Checks-out your repository under $GITHUB_WORKSPACE with submodules
-    - name: Checkout
-      uses: actions/checkout@v2
-      with: 
-        #ssh-key: ${{ secrets.SUBMODULE_CONTENT_DEPLOY_KEY }} # for private submodules
-        submodules: recursive
-
+   
     # Replace configurations
     - name: Replace config.yaml
       uses: microsoft/variable-substitution@v1
@@ -42,18 +35,18 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         env: Preview
 
-    # Step 2 - Install Hugo (specific version)
+    # Install Hugo (specific version)
     - name: Install Hugo
       uses: peaceiris/actions-hugo@v2
       with: 
         hugo-version: '0.82.0'
         extended: true
 
-    # Step 3 - Builds the site using Hugo
+    # Builds the site using Hugo
     - name: Build
       run: hugo -v --minify
 
-     # Step 4 - Push our generated Hugo site to Vercel
+     # Push our generated Hugo site to Vercel
     - name: Deploy to Vercel
       uses: amondnet/vercel-action@v20
       id: vercel-action
