@@ -1,0 +1,185 @@
+.intro {
+    @media (max-width: $on-phone) {      
+        padding: 0px 15px;        
+    }
+
+    .intro-title {
+        font-weight: 600;
+        margin: 0px 0;
+        color: var(--card-text-color-main);
+        font-size: 2.2rem;
+    
+        @media (min-width: $on-desktop-large) {
+            font-size: 2.4rem;
+        }      
+
+        & + .article-subtitle {
+            margin-top: 0;
+        }
+    }
+
+    .intro-subtitle {
+        font-weight: normal;
+        color: var(--card-text-color-secondary);
+        margin: 5px 0;
+        line-height: 1.5;    
+        font-size: 1.75rem;
+        @media (min-width: $on-desktop-large) {
+            font-size: 2rem;
+        }
+    }    
+    
+    .intro-content {
+        margin: var(--card-padding) 0;
+        color: var(--card-text-color-main);
+    
+        font-family: var(--article-font-family);
+        font-size: var(--article-font-size);
+        line-height: var(--article-line-height);
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        & > p {
+            margin: 1.5em 0;
+        }
+    
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-left: calc((var(--card-padding)) * -1);
+            padding-left: calc(var(--card-padding) - var(--heading-border-size));
+            border-left: var(--heading-border-size) solid var(--accent-color);
+        }
+    
+        figure {
+            text-align: center;
+    
+            figcaption {
+                font-size: 1.4rem;
+                color: var(--card-text-color-secondary);
+            }
+        }
+    
+        blockquote {
+            position: relative;
+            margin: 1.5em 0;
+            border-left: var(--blockquote-border-size) solid var(--card-separator-color);
+            padding: 15px calc(var(--card-padding) - var(--blockquote-border-size));
+            background-color: var(--blockquote-background-color);
+        }
+    
+        hr {
+            width: 100px;
+            margin: 30px auto;
+            background: var(--card-text-color-tertiary);
+            height: 2px;
+            border: 0;
+            opacity: 0.55;
+        }
+    
+        code {
+            color: var(--code-text-color);
+            background-color: var(--code-background-color);
+            padding: 2px 4px;
+            border-radius: var(--tag-border-radius);
+            font-family: var(--code-font-family);
+        }
+    
+        .gallery {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 1.5em 0;
+    
+            figure {
+                margin: 0;
+    
+                & + figure {
+                    margin-left: 10px;
+                }
+            }
+        }
+    
+        pre {
+            overflow-x: auto;
+            display: block;
+            background-color: var(--pre-background-color);
+            color: var(--pre-text-color);
+            font-family: var(--code-font-family);
+            line-height: 1.428571429;
+            word-break: break-all;
+            padding: var(--card-padding);
+    
+            code {
+                color: unset;
+                border: none;
+                background: none;
+                padding: 0;
+            }
+        }
+    
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+            margin-bottom: 1.5em;
+            font-size: 0.96em;
+        }
+    
+        th,
+        td {
+            text-align: left;
+            padding: 4px 8px 4px 10px;
+            border: 1px solid var(--table-border-color);
+        }
+    
+        td {
+            vertical-align: top;
+        }
+    
+        tr:nth-child(even) {
+            background-color: var(--tr-even-background-color);
+        }
+    
+        .twitter-tweet {
+            color: var(--card-text-color-main);
+        }
+    
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+    
+            & > iframe {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                border: 0;
+            }
+        }
+    
+        /// Negative margins
+        blockquote,
+        figure,
+        .gallery,
+        pre,
+        .video-wrapper,
+        .s_video_simple {
+            margin-left: calc((var(--card-padding)) * -1);
+            margin-right: calc((var(--card-padding)) * -1);
+            width: calc(100% + var(--card-padding) * 2);
+        }
+    }  
+}
+

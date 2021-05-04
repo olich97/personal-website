@@ -1,0 +1,37 @@
+{{- $ThemeVersion := "2.3.0" -}}
+<footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
+            {{ .Site.Params.footer.since }} - 
+        {{ end }}
+        {{ now.Format "2006" }} {{ .Site.Title }}
+    </section>
+    
+    <section class="powerby">
+        {{ with .Site.Params.footer.customText }}
+            {{ . | safeHTML }} <br/>
+        {{ end }}
+        
+        {{- $Generator := `<b><a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a></b>` -}}
+        {{- $Theme := printf `<b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="%s">Stack</a></b>` $ThemeVersion -}}
+        {{- $DesignedBy := `<b><a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a></b>` -}}        
+        {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
+        {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
+        <!--
+        {{- $CustomizeBy := `<b><a href="https://github.com/olich97" target="_blank" rel="noopener">Olich</a></b>` -}}       
+        {{ T "footer.themeCustomization" (dict "CustomizeBy" $CustomizeBy) | safeHTML  }}
+        -->
+        {{ with .Site.Params.footer.siteAnalytics }}
+            <br />
+            {{- $SiteAnalyticsPlatfrom := printf `<b><a href="%s" target="_blank" rel="noopener">%s</a></b>` .platformUrl .platformCaption -}}  
+            {{- $SiteAnalytics := printf `<b><a href="%s" target="_blank" rel="noopener">%s</a></b>` .siteUrl .siteCaption -}}
+            {{ T "footer.siteAnalytics" (dict  "Analytics" $SiteAnalytics "SiteAnalyticsPlatform" $SiteAnalyticsPlatfrom) | safeHTML  }} 
+        {{ end }} 
+        {{ with .Site.Params.footer.deployOn }}
+            <br />
+            {{- $DeployOn := printf `<b><a href='%s' target='_blank' rel='noopener'>%s</a></b>` .url .caption -}}  
+            {{ T "footer.deployOn" (dict "DeployOn" $DeployOn) | safeHTML  }} <br />
+        {{ end }}     
+    </section>
+</footer>
