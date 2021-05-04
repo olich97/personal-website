@@ -1,4 +1,4 @@
-baseurl: https://www.olich.me
+baseurl: my-base-url.com
 languageCode: en-us
 theme: hugo-theme-olich
 paginate: 10

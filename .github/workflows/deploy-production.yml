@@ -30,7 +30,7 @@ jobs:
       env:
         params.umamiAnalytics.webSiteId: ${{ secrets.UMAMI_SITE_ID }}
         params.umamiAnalytics.url: ${{ secrets.UMAMI_URL }}
-        baseurl: https://olich.me
+        baseurl: ${{ secrets.SITE_URL }}
         params.footer.siteAnalytics.siteUrl: ${{ secrets.UMAMI_SHARE_URL }}        
 
     # Initiate deployment status
@@ -65,6 +65,7 @@ jobs:
         github-comment: false
         vercel-args: '--prod'
         working-directory: public
+        alias-domains: olich.me
 
     # Update deployment status
     - name: Update Deployment Status
