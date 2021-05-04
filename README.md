@@ -2,9 +2,9 @@
 [![Deploy Status](https://github.com/olich97/personal-website/actions/workflows/deploy-production.yml/badge.svg)](https://github.com/olich97/personal-website/actions/workflows/deploy-production.yml)
 
 ## Introduction
-🏗️ This site is built with [Hugo](https://gohugo.io/) using [Stack theme](https://github.com/CaiJimmy/hugo-theme-stack) with some personalization.<br>
+🏗️ The site is built with [Hugo](https://gohugo.io/) using [Stack theme](https://github.com/CaiJimmy/hugo-theme-stack) with some personalization.<br>
 Deploy automatically, with [GitHub actions](https://github.com/features/actions), on [Vercel](https://vercel.com/dashboard).<br>
-📈 The [site usage](https://analytics.olich.me/share/wfXCrntx/personal-website) is tracked by using [Umami](https://umami.is/) and [Supabase](https://supabase.io/).
+📈 Site [analytics](https://analytics.olich.me/share/wfXCrntx/personal-website) is tracked by using [Umami](https://umami.is/) and [Supabase](https://supabase.io/).
 
 
 ## Requirements
