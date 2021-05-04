@@ -1,0 +1,13 @@
+{{ $startDate := time (.Get "start") }}
+{{ $endDate := time (default now (.Get "end")) }}
+
+<!-- Calculate the age in days and months -->
+{{ $ageYears := div (sub $endDate.Unix $startDate.Unix) 31104000 }}
+{{ $ageMonths := sub (div (sub $endDate.Unix $startDate.Unix) 2592000) (mul $ageYears 12) }}
+
+{{ if gt $ageYears 0 }}
+{{ $ageYears }} {{ cond (eq $ageYears 1) "yr." "yrs." }}
+{{ end }}
+{{ if gt $ageMonths 0 }}
+{{ $ageMonths }} {{ cond (eq $ageMonths 1) "mth." "mths." }}
+{{ end }}

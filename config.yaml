@@ -1,0 +1,136 @@
+baseurl: https://www.olich.me
+languageCode: en-us
+theme: hugo-theme-olich
+paginate: 10
+title: Oleh Andrushko
+
+author:
+    name: Oleh Andrushko
+    email: oleh.andrushko3@gmail.com
+
+# Theme i18n support
+DefaultContentLanguage: en
+enableEmoji: true
+permalinks:
+    post: /post/:slug/
+    page: /:slug/
+
+params:
+    cloudFlareAnalytics:
+        enabled: false
+        token: cloudFlareToken
+
+    umamiAnalytics:
+        enabled: true
+        webSiteId: UMAMI_SITE_ID
+        url: UMAMI_URL
+
+    mainSections:        
+        - post
+            
+    featuredImageField: image
+    rssFullContent: true
+    favicon: https://siasky.net/GAA-HG70yaHS3BW6NNxOl3He_tyWba5MChmVIXhc23IP5Q
+
+    social:
+        enabled: true
+        linkedin: https://www.linkedin.com/in/olich97
+        github: https://github.com/olich97
+
+    footer:
+        since: 2021
+        customText:
+        deployOn: 
+            caption: Vercel
+            url: https://vercel.com
+        siteAnalytics: 
+            platformCaption: Umami
+            platformUrl: https://umami.is
+            siteCaption: Site analytics
+            siteUrl: UMAMI_SHARE_URL
+    
+    notFound:
+        image: https://media.giphy.com/media/BP9eGA9XwHmSc/giphy.gif
+
+    introSection: home-intro
+    
+    dateFormat:
+        published: Jan 02, 2006
+        lastUpdated: Jan 02, 2006 15:04 UTC
+
+    sidebar:
+        emoji: 👋
+        subtitle: Hey there Brates! 
+        description: Call me Olich 👱 I'm a curious and passionate software developer!
+        avatar:
+            local: true
+            src: img/mypic.jpg
+
+    article:
+        math: false
+        license:
+            enabled: false
+            default: Licensed under CC BY-NC-SA 4.0
+  
+    widgets:
+        enabled:
+            - search
+            - categories
+            - tag-cloud            
+
+        archives:
+            limit: 5
+
+        tagCloud:
+            limit: 10
+
+        categoriesCloud:
+            limit: 20
+
+    defaultImage:
+        opengraph:
+            enabled: true
+            local: true
+            src: img/myBg.jpg
+
+    colorScheme:
+        # Display toggle
+        toggle: true
+
+        # Available values: auto, light, dark
+        default: auto
+
+    imageProcessing:
+        cover:
+            enabled: true
+        content:
+            enabled: true
+
+### Custom menu
+### See https://docs.stack.jimmycai.com/configuration/custom-menu
+### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
+menu:
+    main:
+        - identifier: home
+          name: Home
+          url: /
+          weight: -100
+          pre: home
+
+related:
+    includeNewer: true
+    threshold: 60
+    toLower: false
+    indices:
+        - name: tags
+          weight: 100
+
+        - name: categories
+          weight: 200
+
+markup:
+    highlight:
+        noClasses: false
+    goldmark:
+        renderer: 
+            unsafe: true

@@ -1,0 +1,17 @@
+<div class="intro">
+
+    <h2 class="intro-title">
+        {{- .Title -}}
+    </h2>
+
+    {{ with .Params.description }}
+    <h3 class="intro-subtitle">
+        {{ . }}
+    </h3>
+    {{ end }}        
+    
+    <section class="intro-content">
+        {{ .Content }}
+    </section>
+
+</div>
