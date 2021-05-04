@@ -14,7 +14,14 @@ jobs:
 
      # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-   
+
+    # Checks-out your repository under $GITHUB_WORKSPACE with submodules
+    - name: Checkout
+      uses: actions/checkout@v2
+      with: 
+        #ssh-key: ${{ secrets.SUBMODULE_CONTENT_DEPLOY_KEY }} # for private submodules
+        submodules: recursive
+
     # Replace configurations
     - name: Replace config.yaml
       uses: microsoft/variable-substitution@v1
