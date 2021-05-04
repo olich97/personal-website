@@ -65,6 +65,7 @@ jobs:
         github-comment: false
         vercel-args: '--prod'
         working-directory: public
+        alias-domains: olich.me
 
     # Update deployment status
     - name: Update Deployment Status
