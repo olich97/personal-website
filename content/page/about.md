@@ -28,7 +28,7 @@ In 2010, at the age of 13, I moved to [Italy](https://goo.gl/maps/LjJxzanHLYo7A1
     - **_Technologies used:_** HTML, CSS, Sass, Vue, JavaScript, C#, T-SQL, SQL Server, .NET/.NET Core, [SignalR](https://dotnet.microsoft.com/apps/aspnet/signalr), [Unity](https://unity.com/), [Unreal Engine 4](https://www.unrealengine.com/)
 
 @ [iSolutions Software Engineering](https://www.isolutions.it), Noceto (PR) Italy:
-:  **Third Parties Developer**  _(Nov 2017 - Jan 2019 ◦ {{< datediff start="2017-10-01" end="2019-01-01" >}})_
+:  **Third Parties Developer**  _(Oct 2017 - Jan 2019 ◦ {{< datediff start="2017-10-01" end="2019-01-01" >}})_
     - Developing backend services
     - Third parties integrations
     - **_Technologies used:_** C#, T-SQL, SQL Server, .NET/.NET Core, VB.NET 
