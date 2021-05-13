@@ -1,6 +1,6 @@
 ---
 author: Oleh Andrushko
-title: Your personal website with hugo and vercel
+title: Build your personal website with hugo and vercel
 date: "2021-05-10"
 description: Guide to create and deploy your own personal website/blog with Hugo
 categories: 
@@ -9,10 +9,10 @@ categories:
   
 tags: 
 - hugo
-- personal blog
+- blog
 - programming
-- go
 - website
+- vercel
   
 image: your-personal-website-with-hugo.png
 
