@@ -33,7 +33,7 @@ params:
             
     featuredImageField: image
     rssFullContent: true
-    favicon: /icon.ico
+    favicon: /siteIcon.ico
 
     social:
         enabled: true
