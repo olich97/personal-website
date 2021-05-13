@@ -31,7 +31,7 @@ params:
     featuredImageField: image
     rssFullContent: true
     favicon: icon.ico
-    
+
     social:
         enabled: true
         linkedin: https://www.linkedin.com/in/olich97
@@ -71,7 +71,15 @@ params:
         license:
             enabled: false
             default: Licensed under CC BY-NC-SA 4.0
-  
+    comments:
+        enabled: true
+        provider: utterances
+
+        utterances:
+            repo: olich97/personal-website
+            issueTerm: pathname
+            label: Post comment
+
     widgets:
         enabled:
             - search
