@@ -30,8 +30,8 @@ params:
             
     featuredImageField: image
     rssFullContent: true
-    favicon: https://siasky.net/GAA-HG70yaHS3BW6NNxOl3He_tyWba5MChmVIXhc23IP5Q
-
+    favicon: icon.ico
+    
     social:
         enabled: true
         linkedin: https://www.linkedin.com/in/olich97
