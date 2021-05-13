@@ -11,6 +11,9 @@ author:
 # Theme i18n support
 DefaultContentLanguage: en
 enableEmoji: true
+# https://gohugo.io/templates/robots/
+enableRobotsTXT: false
+
 permalinks:
     post: /post/:slug/
     page: /:slug/
