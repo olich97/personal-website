@@ -50,7 +50,7 @@ params:
             siteUrl: UMAMI_SHARE_URL
     
     notFound:
-        image: https://media.giphy.com/media/BP9eGA9XwHmSc/giphy.gif
+        image: notFound.gif
 
     introSection: home-intro
     
