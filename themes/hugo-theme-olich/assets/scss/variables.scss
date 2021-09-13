@@ -90,6 +90,8 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
         --card-text-color-secondary: rgba(255, 255, 255, 0.7);
         --card-text-color-tertiary: rgba(255, 255, 255, 0.5);
         --card-separator-color: rgba(255, 255, 255, 0.12);
+
+        --link-background-color: 255, 255, 255;
     }
 }
 
@@ -114,9 +116,9 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 
     --heading-border-size: 4px;
 
-    --link-background-color: 189, 195, 199;
-    --link-background-opacity: 0.5;
-    --link-background-opacity-hover: 0.7;
+    --link-background-color: 0, 0, 0;
+    --link-background-opacity: 0.9;
+    --link-background-opacity-hover: 0.3;
 
     --pre-background-color: #272822;
     --pre-text-color: #f8f8f2;

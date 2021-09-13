@@ -11,6 +11,9 @@ author:
 # Theme i18n support
 DefaultContentLanguage: en
 enableEmoji: true
+# https://gohugo.io/templates/robots/
+enableRobotsTXT: false
+
 permalinks:
     post: /post/:slug/
     page: /:slug/
@@ -30,7 +33,7 @@ params:
             
     featuredImageField: image
     rssFullContent: true
-    favicon: https://siasky.net/GAA-HG70yaHS3BW6NNxOl3He_tyWba5MChmVIXhc23IP5Q
+    favicon: /siteIcon.ico
 
     social:
         enabled: true
@@ -50,7 +53,7 @@ params:
             siteUrl: UMAMI_SHARE_URL
     
     notFound:
-        image: https://media.giphy.com/media/BP9eGA9XwHmSc/giphy.gif
+        image: notFound.gif
 
     introSection: home-intro
     
@@ -71,7 +74,15 @@ params:
         license:
             enabled: false
             default: Licensed under CC BY-NC-SA 4.0
-  
+    comments:
+        enabled: true
+        provider: utterances
+
+        utterances:
+            repo: olich97/personal-website
+            issueTerm: pathname
+            label: Post comment
+
     widgets:
         enabled:
             - search

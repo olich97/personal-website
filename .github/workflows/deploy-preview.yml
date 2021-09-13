@@ -30,8 +30,9 @@ jobs:
       env:
         params.umamiAnalytics.webSiteId: ${{ secrets.UMAMI_SITE_ID }}
         params.umamiAnalytics.url: ${{ secrets.UMAMI_URL }}
-        baseurl: ${{ secrets.SITE_URL }}
-        params.footer.siteAnalytics.siteUrl: ${{ secrets.UMAMI_SHARE_URL }}        
+        baseurl: https://preview.olich.me
+        params.footer.siteAnalytics.siteUrl: ${{ secrets.UMAMI_SHARE_URL }}
+        enableRobotsTXT: false              
 
     # Initiate deployment status
     - name: Start Deployment
