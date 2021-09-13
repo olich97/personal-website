@@ -19,6 +19,9 @@ In 2010, at the age of 13, I moved to [Italy](https://goo.gl/maps/LjJxzanHLYo7A1
 
 @ [Imola Informatica](https://www.imolainformatica.it), Bologna (BO) Italy:
 : **Software Developer & Analyst**  _(Apr 2021 - present ◦ {{< datediff start="2021-04-19" >}})_
+    Business Intelligence Software Development:
+    - Developing and designing ETL workflows using SQL Server Integration Services (SSIS)
+    - Report curation and data modeling using SQL Server Reporting Services (SSRS)
 
 @ [SwitchUp S.r.l](https://www.switchup.it), Fidenza (PR) Italy:
 : **Multimedia Interaction Developer**  _(Jan 2019 - Apr 2021 ◦ {{< datediff start="2019-01-01" end="2021-04-02" >}})_
