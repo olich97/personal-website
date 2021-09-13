@@ -18,7 +18,7 @@ image: your-personal-website-with-hugo.png
 
 readingTime: 10
 
-draft: false
+draft: true
 ---
 
 It's been a while that I was wondering on how bad I am on communication and also my English skills need to be improved. In addiction, I always wanted to have a personal website, something cool you know? Something made by myself. <br>
