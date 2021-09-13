@@ -1,6 +1,6 @@
 ---
 title: About Me 
-description: Looking to become a Software Architect & Engineer 😉
+description: 😉
 aliases:
   - about
   - me
