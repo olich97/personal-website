@@ -14,6 +14,21 @@ enableEmoji: true
 # https://gohugo.io/templates/robots/
 enableRobotsTXT: false
 
+# GDPR: https://gohugo.io/about/hugo-and-gdpr/
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    disable: true
+  instagram:
+    disable: true
+  twitter:
+    disable: true
+  vimeo:
+    disable: true
+  youtube:
+    disable: true
+
 permalinks:
     post: /post/:slug/
     page: /:slug/
@@ -43,6 +58,7 @@ params:
     footer:
         since: 2021
         customText:
+        privacyPage: /privacy
         deployOn: 
             caption: Vercel
             url: https://vercel.com
