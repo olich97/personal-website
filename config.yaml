@@ -67,7 +67,7 @@ params:
         description: Call me Olich 👱 I'm a curious and passionate software developer!
         avatar:
             local: true
-            src: img/mypic.jpg
+            src: img/myPic.jpg
 
     article:
         math: false
