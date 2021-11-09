@@ -47,7 +47,7 @@ I started this blog with simple open source theme ([there are a lot of them](htt
 Sometimes I want to do things (e.g custom tracking, comments integration) in my website that are out of the scope of a simple blog, and Hugo allows to create those things.
 
 Another reason I chose Hugo is because it is fast. 
-First, it has Go at the core, which is known to be a very fast language. And in the Go ecosystem there is no concept of 100 megabytes dependencies and also [Go's Goroutines](https://golangbot.com/goroutines/) are a perfect match for many of the tasks that Hugo performs on every build. Things are made to be as fast as possible. Plus, it is also compiled.
+First, it has Go at the core, which is known to be a fast compiled language. Also [Go's Goroutines](https://golangbot.com/goroutines/) are a perfect match for many of the tasks that Hugo performs on every build. Things are made to be as fast as possible. 
 
 For example, it comes with [Live Reload](https://gohugo.io/getting-started/usage/#livereload) built in and every time changes are detected it takes milliseconds to see the result.
 ```shell
