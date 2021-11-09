@@ -12,9 +12,9 @@
                     <img src="{{ .src }}" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
                 {{ else }}
                     {{ $avatar := resources.Get (.src) }}
-                    
-                    {{ if $avatar }}
-                        {{ $avatarResized := $avatar.Resize "300x" }}
+                    {{ $avatarResized := $avatar.Resize "300x" }}
+
+                    {{ if $avatarResized }}                        
                         <img src="{{ $avatarResized.RelPermalink }}" width="{{ $avatarResized.Width }}"
                             height="{{ $avatarResized.Height }}" class="site-logo" loading="lazy" alt="Avatar">
                     {{ else }}
