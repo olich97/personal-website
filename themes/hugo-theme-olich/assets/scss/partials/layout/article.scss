@@ -230,11 +230,11 @@
         border: 0;
         opacity: 0.55;
     }
-
+    
     code {
         color: var(--code-text-color);
         background-color: var(--code-background-color);
-        padding: 2px 4px;
+        padding: 0.2em 0.4em;
         border-radius: var(--tag-border-radius);
         font-family: var(--code-font-family);
     }
