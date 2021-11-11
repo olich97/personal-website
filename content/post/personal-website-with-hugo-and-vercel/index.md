@@ -49,7 +49,7 @@ Sometimes I want to do things (e.g custom tracking, comments integration) in my 
 Another reason I chose Hugo is because it is fast. 
 First, it has Go at the core, which is known to be a fast compiled language. Also [Go's Goroutines](https://golangbot.com/goroutines/) are a perfect match for many of the tasks that Hugo performs on every build. Things are made to be as fast as possible. 
 
-For example, it comes with [Live Reload](https://gohugo.io/getting-started/usage/#livereload) built in and every time changes are detected it takes milliseconds to see the result.
+For example, it comes with [Live Reload](https://gohugo.io/getting-started/usage/#livereload) built in and every time changes are detected it takes milliseconds to see the result:
 ```shell
 Change detected, rebuilding site.
 2021-11-09 23:57:27.805 +0100
@@ -58,19 +58,23 @@ Total in 17 ms
 ```
 
 ### Markdown
-Hugo is amazing, especially if you are a developer and you’re willing to write in Markdown. Non-tech people might just refuse to use Markdown, and it’s perfectly understandable.
+I think hugo is a right choice for a technical blog, especially if you are a developer and you’re willing to write in Markdown. Non-tech people might just refuse to use Markdown, and it’s perfectly understandable.
 
-Also, you have to be prepared for a Git-centric workflow to make things really click.
+Also, you have to be prepared for a Git-centric workflow for publishing your posts (or you can use some cms solutions like [Strapi](https://strapi.io/integrations/hugo-cms) or [Forestry](https://forestry.io/)). Most people would disagree with me on using `git commit` and `git push` just for publishing a post, but I found it pretty cool.
 
-This is the process for writing a blog:
+For example, my process for writing a new post is:
 
-- write a post using Markdown,
-- then commit your changes to a Git repository, most commonly on GitHub,
-- and then some glue technology deploys the changes on the server that hosts the site.
+1. Write a post using Markdown
+2. Commit my changes to a GitHub develop branch
+3. Some glue technology deploys the changes on the Vercel preview server
+4. Take some days to review the post in preview environment, make some improvements and then I am satisfied create a pull request towards the main branch
+5. After self-accepting the PR, the same glue technology deploys all new stuff on the main server visible to all the world
 
 ## Prerequisites
 
-A list of prerequisites in order to correctly practice the steps of this little guide
+Here are some stuff that you're gonna need in order to make the magic happens:
+- [Installation](https://gohugo.io/getting-started/installing/) of Hugo version `0.80.0` or higher
+- A free subscription of [Vercel](https://vercel.com/signup) account
 
 ## Step 1: Installation
 
@@ -81,7 +85,7 @@ Here I need to explain how to install stuff listed in Prerequisites
 Here I need to explain how to create a hugo website, use a theme, configure the website.
 Push and create a website repository
 
-[Theme to use](https://themes.gohugo.io//theme/hugo-theme-m10c/)
+[Theme to use](https://themes.gohugo.io/themes/hugo-paper/): https://github.com/nanxiaobei/hugo-paper
 
 ## Step 3: Deploy your website
 
