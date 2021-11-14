@@ -73,13 +73,34 @@ For example, my process for writing a new post is:
 ## Prerequisites
 
 Here are some stuff that you're gonna need in order to make the magic happens:
+- [Git](https://git-scm.com/) version control system installed
 - [Installation](https://gohugo.io/getting-started/installing/) of Hugo version `0.80.0` or higher
 - A free subscription of [Vercel](https://vercel.com/signup) account
+- A [GitHub](https://github.com/signup) account
 
-## Step 1: Installation
+## Step 1: Preparation
 
-Here I need to explain how to install stuff listed in Prerequisites
+First of all, we need to check a correctness of **Git** installation in your system, just by running the `git version` command on your terminal.
+You should see something like this on your terminal, as an output:
+```bash
+git version 2.31.1.windows.1
+```
+If you don't have git, you can install it by downloading from [the official website](https://git-scm.com/).
 
+> Make sure to connect Git with you GitHub account. Read more about GitHub and Git setup from [here](https://docs.github.com/en/get-started/quickstart/set-up-git).
+
+Now we need to install **Hugo**:
+
+1) Go to [Hugo installation section](https://gohugo.io/getting-started/installing/) of documentation and follow the steps for your operating system
+
+... and create an empty **repository** in your GitHub account following this steps:
+
+2) Create a new repository with the name you like (for this tutorial I'll be using `hugo-example-blog`)
+> You can create a new repository on GitHub using a web browser or GitHub CLI: check out [the documentation](https://docs.github.com/en/get-started/quickstart/create-a-repo).
+
+3) [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) the newly created repository on your computer.
+
+Now, you should be ready to go! 🎉
 ## Step 2: Create your website
 
 Here I need to explain how to create a hugo website, use a theme, configure the website.
