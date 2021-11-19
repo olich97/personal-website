@@ -93,7 +93,7 @@ Now we need to install **Hugo**:
 
 1) Go to [Hugo installation section](https://gohugo.io/getting-started/installing/) of documentation and follow the steps for your operating system
 
-... and create an empty **repository** in your GitHub account following this steps:
+... and create an empty **repository** in your GitHub account:
 
 2) Create a new repository with the name you like (for this tutorial I'll be using `hugo-example-blog`)
 > You can create a new repository on GitHub using a web browser or GitHub CLI: check out [the documentation](https://docs.github.com/en/get-started/quickstart/create-a-repo).
@@ -103,10 +103,43 @@ Now we need to install **Hugo**:
 Now, you should be ready to go! 🎉
 ## Step 2: Create your website
 
-Here I need to explain how to create a hugo website, use a theme, configure the website.
-Push and create a website repository
+### Creating a new site
+Creating a website is pretty easy, just fire the command `hugo new site hugo-example-blog` in a directory of your choice:
+```shell
+$ hugo new site hugo-example-blog
+Congratulations! Your new Hugo site is created in \path\to\hugo-example-blog.
+```
 
-[Theme to use](https://themes.gohugo.io/themes/hugo-paper/): https://github.com/nanxiaobei/hugo-paper
+Lets add a newly created project [to our GitHub repository](https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line):
+1. In the command line, navigate to the newly created directory (/path/to/hugo-example-blog)
+2. Initialize the local directory as a Git repository:
+```shell
+$ git init -b main
+Initialized empty Git repository in /path/to/hugo-example-blog/.git/
+```
+3. Stage and commit all the files in your project:
+```shell
+$ git add .
+$ git commit -m "initial commit"
+Initialized empty Git repository in /path/to/hugo-example-blog/.git/
+```
+4. Push all files to GitHub repository:
+```shell
+$ git remote add origin https://github.com/olich97/hugo-example-blog.git
+$ git push --set-upstream origin main
+```
+### Adding the theme
+
+We need to choose a theme for our website. You can do it choosing the one you like from the [official hugo site](https://themes.gohugo.io/).
+Almost all the themes are open source so you can modify them freely.
+
+For this example I've chosen [a paper theme](https://github.com/nanxiaobei/hugo-paper):
+
+![Paper Hugo Theme Preview](paper-preview.png)
+
+Now we need to "install" our theme and create a hugo website.
+There are two ways to do that: 
+- Install your theme as a submodule: 
 
 ## Step 3: Deploy your website
 
