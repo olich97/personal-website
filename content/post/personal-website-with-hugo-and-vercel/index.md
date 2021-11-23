@@ -187,6 +187,89 @@ In this section we will setup a simple [GitHub Actions](https://github.com/featu
 
 ![Workflow Diagram (build with draw.io)](ci-workflow.png)
 
+> [Vercel](https://vercel.com/docs) is a platform for frontend frameworks and static sites, built to integrate with your headless content, commerce, or database.  It is easy to develop, preview, and ship delightful user experiences, where performance is the default.
+
+### Configuring vercel
+
+In order to deploy our Hugo site from GitHub we need in some way give to GitHub Actions access to our Vercel account.
+
+We're gonna need three essential values from Vercel:
+- [Vercel Account Token](https://vercel.com/account/tokens)
+- Organization ID
+- Project ID
+
+For generation a new **Account Token** just visit https://vercel.com/account/tokens and click on `create', give it a name (in my case 'hugo-example-site') and save it for later use.
+![Vercel Token Creation](token-creation.gif)
+
+To obtain a **Organization ID** and **Project ID** a new project needs to be created. 
+For this we’ll use the **Vercel CLI**. 
+
+Use either the `npm` or `yarn` package manager to install the **Vercel CLI** in your local development environment:
+```shell
+$ npm i -g vercel
+```
+
+### Deploying to vercel
+Now we create a new project on our vercel account:
+1. Login on vercel locally by firing `vercel` command on the root of our project and following instructions: 
+```shell
+$ vercel
+Vercel CLI 23.1.2
+No existing credentials found. Please log in:
+Log in to Vercel github
+Success! GitHub authentication complete for example@email.com
+```
+2. Now that you’re logged in run the `vercel` command again to configure and deploy our site to Vercel as a new project:
+```shell
+$ vercel
+Vercel CLI 23.1.2
+? Set up and deploy “path\to\hugo-example-blog”? [Y/n] y
+? Which scope do you want to deploy to? olich97
+? Link to existing project? [y/N] n
+? What’s your project’s name? hugo-example-blog
+? In which directory is your code located? ./
+> Upload [===============-----] 72% 1.5sAuto-detected Project Settings (Hugo):
+- Build Command: `npm run build` or `hugo -D --gc`
+- Output Directory: `public` or `publishDir` from the `config` file
+- Development Command: hugo server -D -w -p $PORT
+? Want to override the settings? [y/N] n
+🔗  Linked to olich97/hugo-example-blog (created .vercel and added it to .gitignore)
+🔍  Inspect: https://vercel.com/olich97/hugo-example-blog/ESNvEjydmACDsiibPJt2YCwrYyS9
+```
+
+Once deployed search the newly generated local `.vercel` directory for the `project.json` file, it’ll contain your new organisation and project IDs:
+```json
+{"orgId":"your-secret-organization-id","projectId":"prj_your-secret-project-id"}
+```
+We need to configure our GitHub site repository with newly created secrets.
+
+Go to GitHub site `repository > Settings > Secrets > Actions > New repository secret`.
+
+Add all three vercel values created:
+![GitHub Secrets](secret-configuration.png)
+
+Since GitHub Actions will be responsible for building Hugo site our new project settings need be updated so that Vercel doesn’t attempt to **build** the site again once GitHub Actions has pushed the content to Vercel.
+
+In the Vercel dashboard navigate to the **Settings** of new project. Click the switch to override the BUILD COMMAND. Leave the input **field empty**:
+![Vercel Build Settings](build-settings.gif)
+
+### Creating the GitHub Actions Workflow Files
+First of all we need to create a `develop` branch by running git checkout on the root of our hugo website:
+```shell
+$ git checkout -b develop
+Switched to a new branch 'develop'
+```
+
+In a  `.github/workflows` directory at the root of our project create two new files:
+- `deploy-preview.yaml` with content: **[preview gist](https://gist.github.com/olich97/a1fb2750a3ca07015ddb8e01685b7b7c)**
+- `deploy-production.yaml` with content: **[prod gist](https://gist.github.com/olich97/5ba50f83f008d483ab8215ef09b84d10)**
+
+Let push our changes on GitHub and see what happens.
+```shell
+$ git add .
+$ git commit -m "ci: add GitHub Actions workflow"
+$ git push --set-upstream origin develop
+```
 ## Step 4: Enjoy
 
 Some demo stuff
