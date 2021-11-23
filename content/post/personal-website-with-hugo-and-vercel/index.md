@@ -16,7 +16,7 @@ tags:
   
 image: your-personal-website-with-hugo.png
 
-readingTime: 10
+readingTime: 15
 
 draft: false
 ---
@@ -120,31 +120,72 @@ Initialized empty Git repository in /path/to/hugo-example-blog/.git/
 3. Stage and commit all the files in your project:
 ```shell
 $ git add .
-$ git commit -m "initial commit"
-Initialized empty Git repository in /path/to/hugo-example-blog/.git/
+$ git commit -m "Initial commit"
 ```
 4. Push all files to GitHub repository:
 ```shell
-$ git remote add origin https://github.com/olich97/hugo-example-blog.git
-$ git push --set-upstream origin main
+# add remote for the repo
+$ git remote add origin <REMOTE_URL>
+# sets the new remote
+$ git remote -v
+# for pulling unrelated remote history if there are conflicts
+$ git pull origin main --allow-unrelated-histories
+# push the changes to remote repository
+$ git push origin main
 ```
 ### Adding the theme
 
-We need to choose a theme for our website. You can do it choosing the one you like from the [official hugo site](https://themes.gohugo.io/).
+We need to choose a theme for our website. 
+You can do it by choosing the one you like from the [official hugo site](https://themes.gohugo.io/).
 Almost all the themes are open source so you can modify them freely.
 
 For this example I've chosen [a paper theme](https://github.com/nanxiaobei/hugo-paper):
 
 ![Paper Hugo Theme Preview](paper-preview.png)
 
-Now we need to "install" our theme and create a hugo website.
+Now we need to "install" our theme on newly created website.
+
 There are two ways to do that: 
-- Install your theme as a submodule: 
+- Installing a theme as a [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules): particularly useful when you want to keep your theme updated with new features:
+```shell
+# navigate to the themes directory inside the site repository
+$ cd themes
+# add the theme as a submodule
+$ git submodule add <THEME_REMOTE_URL>
+```
+- Manually installing a theme: it's recommended when your are aware of making a lot of custom changes on the theme
+```shell
+# navigate to the themes directory inside the site repository
+$ cd themes
+# clone the theme
+$ git clone <THEME_REMOTE_URL> <THEME_NAME>
+```
+If you do not have Git installed:
+1. Download the .zip file from GitHub
+2. Unzip it to your site's themes directory
+3. Rename the directory to the theme name
+
+Here the commands for installing as a submodule our paper theme:
+```shell
+$ cd themes
+$ git submodule add https://github.com/nanxiaobei/hugo-paper.git
+```
+### Configuring and testing the website
+1. Copy a content of `themes/hugo-paper/exampleSite` folder to the root website folder `hugo-example-blog`.
+2. Modify `config.toml` file based on your needs
+3. Start a website by firing `hugo server` on your terminal inside site folder 
+4. Enjoy the result:
+`http://localhost:1313`
+
+![Paper Hugo Theme Result](paper-result.gif)
+
+> You can add a new pages or posts anytime by creating files inside `hugo-example-blog\content` folder
 
 ## Step 3: Deploy your website
 
-Prepare vercel account, create and commit git workflow, publish the website.
-Explain how vercel works and how personalize domains.
+In this section we will setup a simple [GitHub Actions](https://github.com/features/actions) workflow with `production` (main) and `develop` (develop) branches that will build and deploy our website on Vercel.
+
+![Workflow Diagram (build with draw.io)](ci-workflow.png)
 
 ## Step 4: Enjoy
 
