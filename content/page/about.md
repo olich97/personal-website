@@ -66,5 +66,5 @@ In 2010, at the age of 13, I moved to [Italy](https://goo.gl/maps/LjJxzanHLYo7A1
 📺 Hackers | Friends | How I Met Your Mother | Silicon Valley | Tarantino's films ...<br>
 💻 Blockchain Technology | DLT
 ***
-{{< img src="img/ph2.jpg" alt="Oleh Andrushko Black&White" sizes="(min-width: 35em) 500px, 100vw" >}}
-<span style="float: right;">{{< img src="img/ph3.jpg" alt="Oleh Andrushko Normal" sizes="(min-width: 35em) 500px, 100vw" >}} </span>
+{{< img src="img/ph2.jpg" alt="Oleh Andrushko Black&White" sizes="(min-width: 35em) 50vh, 100vw" >}}
+

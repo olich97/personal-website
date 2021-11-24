@@ -6,6 +6,11 @@
             {{ .Site.Params.footer.since }} - 
         {{ end }}
         {{ now.Format "2006" }} {{ .Site.Title }}
+        <!-- Privacy Policy -->
+        {{ with .Site.Params.footer.privacyPage }}
+            <br/>
+            <a href='{{ . }}' rel='noopener'>Privacy Policy</a>
+        {{ end }}  
     </section>
     
     <section class="powerby">
