@@ -139,9 +139,7 @@ We need to choose a theme for our website.
 You can do it by choosing the one you like from the [official hugo site](https://themes.gohugo.io/).
 Almost all the themes are open source so you can modify them freely.
 
-For this example I've chosen [a paper theme](https://github.com/nanxiaobei/hugo-paper):
-
-![Paper Hugo Theme Preview](paper-preview.png)
+For this example I've chosen [a paper theme](https://github.com/nanxiaobei/hugo-paper).
 
 Now we need to "install" our theme on newly created website.
 
@@ -270,8 +268,32 @@ $ git add .
 $ git commit -m "ci: add GitHub Actions workflow"
 $ git push --set-upstream origin develop
 ```
-## Step 4: Enjoy
 
-Some demo stuff
+If we take a look on our GitHub project page we can see that a new environment was created: 
+![GitHub Environments](env-github.png)
+
+Now we can view our preview deployment just by clicking on **View deployment** link inside GitHub Project deployments page:
+![GitHub View Deployment](view-deploy-github.png)
+
+As you can see vercel generate a temporary url for our deployment so we can check it:
+![Vercel Deploy Result](preview-deploy-vercel.gif)
+
+Now we just have to release everything in production and it is pretty easy: just create and merge a new pull request against `main` branch.
+
+![GitHub Pull Request](pull-request.gif)
+
+GitHub Actions will build  `main` branch automatically and deploy to vercel production.
+Now and it could be navigated from free vercel domain assigned to our website: https://hugo-example-blog.vercel.app. 
+
+The domain can be customized on Vercel Project Settings page: 
+
+![Vercel Domain Configuration](vercel-domain-config.gif)
 
 ## Conclusion
+
+In this article we've created a new static website from zero and configured an automatic deployment workflows for two environments:
+- `preview`: for our testing purposes
+- `production`: for final users
+
+Another advantage of using a static website (in this case build with Hugo) is pages load time (that is pretty fast in this case). 
+You can check [performance of our newly created website](https://gtmetrix.com/reports/hugo-example-blog.vercel.app/Ec70EB41/) on [GTmetrix](https://gtmetrix.com/) and see it by yourself.
