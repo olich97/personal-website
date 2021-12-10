@@ -297,3 +297,5 @@ In this article we've created a new static website from zero and configured an a
 
 Another advantage of using a static website (in this case build with Hugo) is pages load time (that is pretty fast in this case). 
 You can check [performance of our newly created website](https://gtmetrix.com/reports/hugo-example-blog.vercel.app/Ec70EB41/) on [GTmetrix](https://gtmetrix.com/) and see it by yourself.
+
+Complete Source Code: https://github.com/olich97/hugo-example-blog
