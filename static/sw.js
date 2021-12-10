@@ -1,5 +1,4 @@
 const CACHE_VERSION = new URL(location).searchParams.get("version");
-console.log(CACHE_VERSION);
 const BASE_CACHE_FILES = [
     '/index.html',         
     '/404.html',
