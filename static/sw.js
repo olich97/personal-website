@@ -7,7 +7,6 @@ const BASE_CACHE_FILES = [
     '/world_map.ico', 
     '/scss/style.min.css',
     '/manifest.json',
-    '/img/',
     '/page/',
     '/post/',
     '/ts/main.js',
