@@ -33,7 +33,13 @@ permalinks:
     post: /post/:slug/
     page: /:slug/
 
+
+
 params:
+    pwa:
+        enabled: true
+        contentVersion: 1.0
+        
     cloudFlareAnalytics:
         enabled: false
         token: cloudFlareToken
@@ -125,7 +131,7 @@ params:
         toggle: true
 
         # Available values: auto, light, dark
-        default: auto
+        default: dark
 
     imageProcessing:
         cover:
