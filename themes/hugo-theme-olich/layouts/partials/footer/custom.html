@@ -14,3 +14,32 @@
 {{ if (default false .Site.Params.umamiAnalytics.enabled) }}
 <script async defer data-website-id="{{ .Site.Params.umamiAnalytics.webSiteId }}" src="{{ .Site.Params.umamiAnalytics.url }}/umami.js"></script>
 {{ end }}
+
+{{ if (default false .Site.Params.pwa.enabled) }}
+<script>
+  if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+          .register('/sw.js?version={{ .Site.Params.pwa.contentVersion }}', { scope: '/' })
+          .then(() => {
+              console.info('Service Worker Registered');
+          }, err => console.error("Service Worker registration failed: ", err));
+  
+      navigator.serviceWorker
+          .ready
+          .then(() => {
+              console.info('Service Worker Ready');
+          });
+  }
+  </script>
+{{- else -}}
+<script>
+ if(window.navigator && navigator.serviceWorker) {
+    navigator.serviceWorker.getRegistrations()
+    .then(function(registrations) {
+      for(let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+  </script>
+{{ end }}

@@ -1,4 +1,4 @@
-baseurl: my-base-url.com
+baseurl: http://localhost:1313/
 languageCode: en-us
 theme: hugo-theme-olich
 paginate: 10
@@ -33,7 +33,13 @@ permalinks:
     post: /post/:slug/
     page: /:slug/
 
+
+
 params:
+    pwa:
+        enabled: true
+        contentVersion: 0.0.7
+        
     cloudFlareAnalytics:
         enabled: false
         token: cloudFlareToken
@@ -69,7 +75,7 @@ params:
             siteUrl: UMAMI_SHARE_URL
     
     notFound:
-        image: notFound.gif
+        image: /notFound.gif
 
     introSection: home-intro
     
@@ -125,7 +131,7 @@ params:
         toggle: true
 
         # Available values: auto, light, dark
-        default: auto
+        default: dark
 
     imageProcessing:
         cover:

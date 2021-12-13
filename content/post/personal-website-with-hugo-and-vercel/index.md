@@ -187,7 +187,7 @@ In this section we will setup a simple [GitHub Actions](https://github.com/featu
 
 > [Vercel](https://vercel.com/docs) is a platform for frontend frameworks and static sites, built to integrate with your headless content, commerce, or database.  It is easy to develop, preview, and ship delightful user experiences, where performance is the default.
 
-### Configuring vercel
+### Configuring Vercel
 
 In order to deploy our Hugo site from GitHub we need in some way give to GitHub Actions access to our Vercel account.
 
@@ -283,7 +283,7 @@ Now we just have to release everything in production and it is pretty easy: just
 ![GitHub Pull Request](pull-request.gif)
 
 GitHub Actions will build  `main` branch automatically and deploy to vercel production.
-Now and it could be navigated from free vercel domain assigned to our website: https://hugo-example-blog.vercel.app. 
+Now it could be navigated from free vercel domain assigned to our website: https://hugo-example-blog.vercel.app. 
 
 The domain can be customized on Vercel Project Settings page: 
 
@@ -297,3 +297,5 @@ In this article we've created a new static website from zero and configured an a
 
 Another advantage of using a static website (in this case build with Hugo) is pages load time (that is pretty fast in this case). 
 You can check [performance of our newly created website](https://gtmetrix.com/reports/hugo-example-blog.vercel.app/Ec70EB41/) on [GTmetrix](https://gtmetrix.com/) and see it by yourself.
+
+Complete Source Code: https://github.com/olich97/hugo-example-blog
