@@ -1,4 +1,4 @@
-baseurl: http://localhost:1313
+baseurl: http://localhost:1313/
 languageCode: en-us
 theme: hugo-theme-olich
 paginate: 10
@@ -38,7 +38,7 @@ permalinks:
 params:
     pwa:
         enabled: true
-        contentVersion: 0.0.4
+        contentVersion: 0.0.7
         
     cloudFlareAnalytics:
         enabled: false
@@ -75,7 +75,7 @@ params:
             siteUrl: UMAMI_SHARE_URL
     
     notFound:
-        image: notFound.gif
+        image: /notFound.gif
 
     introSection: home-intro
     

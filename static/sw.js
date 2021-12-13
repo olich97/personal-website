@@ -26,6 +26,7 @@ class Pwa {
             '/img/',
             '/icons/',
             '/tags/',
+            '/offline/index.html',
         ];
         this.host = `${self.location.protocol}//${self.location.host}`;
         this.OFFLINE_PAGE = '/404.html';
