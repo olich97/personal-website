@@ -1,4 +1,4 @@
-baseurl: my-base-url.com
+baseurl: http://localhost:1313
 languageCode: en-us
 theme: hugo-theme-olich
 paginate: 10

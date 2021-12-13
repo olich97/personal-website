@@ -5,7 +5,6 @@ class Pwa {
         const Version = new URL(location).searchParams.get("version");
         this.CACHE_VERSION = Version;
         this.BASE_CACHE_FILES = [
-            '/',
             '/index.html',         
             '/404.html',
             '/notFound.gif',
@@ -26,7 +25,7 @@ class Pwa {
             '/search/'
         ];
         this.host = `${self.location.protocol}//${self.location.host}`;
-        this.OFFLINE_PAGE = '/offline/';
+        this.OFFLINE_PAGE = '/404.html';
         this.NOT_FOUND_PAGE = '/404.html';
         this.CACHE_NAME = `content-v${this.CACHE_VERSION}`;
         this.MAX_TTL = 86400;
