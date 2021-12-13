@@ -22,7 +22,10 @@ class Pwa {
             '/home-intro/',
             '/privacy/',
             '/privacy-policy/',
-            '/search/'
+            '/search/',
+            '/img/',
+            '/icons/',
+            '/tags/',
         ];
         this.host = `${self.location.protocol}//${self.location.host}`;
         this.OFFLINE_PAGE = '/404.html';
