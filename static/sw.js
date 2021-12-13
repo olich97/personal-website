@@ -23,8 +23,6 @@ class Pwa {
             '/privacy/',
             '/privacy-policy/',
             '/search/',
-            '/img/',
-            '/icons/',
             '/tags/',
             '/offline/index.html',
         ];
