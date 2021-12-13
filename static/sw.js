@@ -29,7 +29,7 @@ class Pwa {
             '/offline/index.html',
         ];
         this.host = `${self.location.protocol}//${self.location.host}`;
-        this.OFFLINE_PAGE = '/404.html';
+        this.OFFLINE_PAGE = '/offline/index.html';
         this.NOT_FOUND_PAGE = '/404.html';
         this.CACHE_NAME = `content-v${this.CACHE_VERSION}`;
         this.MAX_TTL = 86400;
