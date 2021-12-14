@@ -37,8 +37,8 @@ permalinks:
 
 params:
     pwa:
-        enabled: true
-        contentVersion: 0.0.8
+        enabled: false
+        contentVersion: 0.0.9
         
     cloudFlareAnalytics:
         enabled: false
