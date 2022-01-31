@@ -14,8 +14,8 @@ My name is Oleh _(friends call me Olich)_. <br>
 I'm from [Ukraine](https://goo.gl/maps/TNhdrpgGgsRaUbJy7), born in 1997. <br>
 In 2010, at the age of 13, I moved to [Italy](https://goo.gl/maps/LjJxzanHLYo7A1TQA) where I've started studying computer science and dreaming of the future.<br>
 I love learning new stuff, programming backend services (with attention on software architecture, clean code, best practices) and automating things.
-On my free time, I'm interested in distributed systems, blockchains and cloud developing for scalable applications.
-
+Fascinated by distributed systems, blockchains and cloud developing for scalable applications.<br>
+My favorite programming languages are TypeScript, Java and C#.
 ***
 ## 👨🏼‍💻 Technical Experience <span style="font-size:19px; font-weight: lighter;">_( {{< datediff start="2016-09-01" >}} )_ 
 
@@ -53,7 +53,7 @@ _Worked on main company product: a highly transactional sports betting platform_
 ***
 ## 👨🏼‍🎓 Education
 
-@ [MasterZ](https://www.masterzblockchain.com/), Online - _(Dec 2021 - Feb 2022 ◦ {{< datediff start="2021-11-01" end="2022-02-01" >}})_<br>
+@ [MasterZ](https://www.masterzblockchain.com/), Online - _(Oct 2021 - Feb 2022 ◦ {{< datediff start="2021-10-01" end="2022-02-01" >}})_<br>
 _MasterZ “Blockchain and Digital assets” is a business oriented educational training program that enables you to have a clear 360° view of the Blockchain technology and of the world of Digital Assets._<br>
 **_Syllabus:_** Blockchains, Smart Contracts, Token & NFT, Cryptocurrencies and [more...](https://www.masterzblockchain.com/#master_structure)
 
