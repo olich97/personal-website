@@ -60,6 +60,7 @@ params:
         enabled: true
         linkedin: https://www.linkedin.com/in/olich97
         github: https://github.com/olich97
+        twitter: https://twitter.com/olichdev
 
     footer:
         since: 2021
