@@ -11,11 +11,11 @@ menu:
 ---
 {{< img src="img/ph1.png" alt="Oleh Andrushko Background" sizes="(min-width: 35em) 1000px, 100vw" >}} <br>
 My name is Oleh _(friends call me Olich)_. <br>
-I'm from [Ukraine](https://goo.gl/maps/TNhdrpgGgsRaUbJy7), born in 1997. <br>
-In 2010, at the age of 13, I moved to [Italy](https://goo.gl/maps/LjJxzanHLYo7A1TQA) where I've started studying computer science and dreaming of the future.<br>
-I love learning new stuff, programming backend services (with attention on software architecture, clean code, best practices) and automating things.
-Fascinated by distributed systems, blockchains and cloud developing for scalable applications.<br>
-My favorite programming languages are TypeScript, Java and C#.
+🇺🇦 I'm from Ukraine, born in 1997. <br>
+🇮🇹 In 2010, at the age of 13, I moved to Italy where I've started studying computer science and dreaming of the future.<br>
+📖 I love learning new stuff, programming backend services (with attention on software architecture, clean code, best practices) and automating things. <br>
+🔭 Fascinated by distributed systems, blockchains and cloud developing for scalable applications.<br>
+🧑‍🚀 My favorite programming languages are TypeScript, Java and C#.
 ***
 ## 👨🏼‍💻 Technical Experience <span style="font-size:19px; font-weight: lighter;">_( {{< datediff start="2016-09-01" >}} )_ 
 

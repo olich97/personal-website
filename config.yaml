@@ -87,7 +87,7 @@ params:
     sidebar:
         emoji: 👋
         subtitle: Hey there Brates! 
-        description: Call me Olich 👱 I'm a curious and passionate software developer!
+        description: I'm a curious and passionate software developer 👱
         avatar:
             local: true
             src: img/myPicRes2.jpg
