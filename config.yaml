@@ -6,7 +6,7 @@ title: Oleh Andrushko
 
 author:
     name: Oleh Andrushko
-    email: oleh.andrushko3@gmail.com
+    email: olich.me@gmail.com
 
 # Theme i18n support
 DefaultContentLanguage: en
@@ -85,9 +85,9 @@ params:
         lastUpdated: Jan 02, 2006 15:04 UTC
 
     sidebar:
-        emoji: 👋
-        subtitle: Hey there Brates! 
-        description: I'm a curious and passionate software developer 👱
+        emoji: 🚀
+        subtitle: ⛓️ experimenting with blockchain technologies 🪙
+        description: 
         avatar:
             local: true
             src: img/myPicRes2.jpg

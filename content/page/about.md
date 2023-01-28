@@ -15,12 +15,21 @@ My name is Oleh _(friends call me Olich)_. <br>
 🇮🇹 In 2010, at the age of 13, I moved to Italy where I've started studying computer science and dreaming of the future.<br>
 📖 I love learning new stuff, programming backend services (with attention on software architecture, clean code, best practices) and automating things. <br>
 🔭 Fascinated by distributed systems, blockchains and cloud developing for scalable applications.<br>
-🧑‍🚀 My favorite programming languages are TypeScript, Java and C#.
+🧑‍🚀 I'm able to write code in Rust, TypeScript, Java and C#.
 ***
 ## 👨🏼‍💻 Technical Experience <span style="font-size:19px; font-weight: lighter;">_( {{< datediff start="2016-09-01" >}} )_ 
 
+@ [True Layer](https://www.truelayer.com), Milan, Italy / London, UK
+: **Full Stack Engineer - Crypto R&D**  _(June 2022 - present ◦ {{< datediff start="2022-06-01" >}})_
+    - Buiding POCs and working prototypes based on bleeding edge ideas
+    - Developing integrations with [EVM compatible chains](https://101blockchains.com/ethereum-virtual-machine/#:~:text=Some%20of%20the%20notable%20names,Tron%2C%20Cardano%2C%20and%20Polygon.)
+    - Solidity smart contract reviews and integration
+    - Building and managing services in [Rust](https://www.rust-lang.org/)
+
+**_Technologies used:_** AWS, Terraform, CircleCi, T-SQL, Rust, Solidity, Ethereum, Polygon, PostgreSQL, [OpenZeppelin](https://www.openzeppelin.com/), [Fireblocks](https://www.fireblocks.com/)
+
 @ [Imola Informatica](https://www.imolainformatica.it), Bologna (BO) Italy
-: **Software Developer & Analyst**  _(Apr 2021 - present ◦ {{< datediff start="2021-04-19" >}})_
+: **Software Developer & Analyst**  _(Apr 2021 - May 2022 ◦ {{< datediff start="2021-04-19" end="2022-05-01" >}})_
     - Business Intelligence Software Development
     - Developing & designing ETL workflows using SQL Server Integration Services ([SSIS](https://docs.microsoft.com/it-it/sql/integration-services/sql-server-integration-services))
     - Report curation & data modeling using SQL Server Reporting Services ([SSRS](https://docs.microsoft.com/it-it/sql/reporting-services/create-deploy-and-manage-mobile-and-paginated-reports))
