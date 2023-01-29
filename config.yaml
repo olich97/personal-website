@@ -90,7 +90,7 @@ params:
         description: 
         avatar:
             local: true
-            src: img/ava.jpeg
+            src: img/ava.png
 
     article:
         math: false
