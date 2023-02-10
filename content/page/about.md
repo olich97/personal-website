@@ -8,6 +8,7 @@ menu:
     main: 
         weight: -90
         pre: user
+toc: false
 ---
 {{< img src="img/ph1.png" alt="Oleh Andrushko Background" sizes="(min-width: 35em) 1000px, 100vw" >}} <br>
 My name is Oleh _(friends call me Olich)_. <br>

@@ -12,7 +12,11 @@
         }
 
         @media (min-width: $on-tablet) {
-            max-width: 1100px;
+            max-width: 80vw;
+
+            .left-sidebar {
+                width: 20%;
+            }
 
             .right-sidebar {
                 width: 25%;

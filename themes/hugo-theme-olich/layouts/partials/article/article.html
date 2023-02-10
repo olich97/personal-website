@@ -1,6 +1,10 @@
 <article class="{{ if .Params.image }}has-image {{ end }}main-article">
     {{ partial "article/components/header" . }}
 
+    {{ if and (not .Params.toc) (not (eq .Params.toc false)) }} 
+        {{ partial "article/components/toc" . }}
+    {{ end }}
+
     {{ partial "article/components/content" . }}
 
     {{ partial "article/components/footer" . }}
