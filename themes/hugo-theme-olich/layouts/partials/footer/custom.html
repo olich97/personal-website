@@ -12,7 +12,7 @@
 
 
 {{ if (default false .Site.Params.umamiAnalytics.enabled) }}
-<script async defer data-website-id="{{ .Site.Params.umamiAnalytics.webSiteId }}" src="{{ .Site.Params.umamiAnalytics.url }}/umami.js"></script>
+<script async defer data-website-id="{{ .Site.Params.umamiAnalytics.webSiteId }}" src="{{ .Site.Params.umamiAnalytics.url }}/script.js"></script>
 {{ end }}
 
 {{ if (default false .Site.Params.pwa.enabled) }}
