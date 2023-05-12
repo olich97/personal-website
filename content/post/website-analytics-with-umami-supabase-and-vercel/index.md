@@ -1,8 +1,8 @@
 ---
 author: Oleh Andrushko
-title: "Build your own privacy-focused website analytics platform with Umami, Supabase, and Vercel"
+title: "Self-hosted analytics platform with Umami, Supabase, and Vercel"
 date: "2022-04-15"
-description: A complete guide to setup a self-hosted, privacy-focused alternative to Google Analytics platform for free. Umami is a simple, fast, privacy-focused alternative to Google Analytics. Supabase is an open source Firebase alternative database. Vercel is the platform for develop, preview and ship frontend applications. All mixed toghether is nice and simple solution for tracking your personal websites usage.
+description: A complete guide to setup a self-hosted, privacy-focused alternative to Google Analytics platform with Umami, Supabase and Vercel for free. Your own simple and fast website analytics platform for your projects.
 
 categories: 
 - Programming
