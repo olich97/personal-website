@@ -16,7 +16,7 @@ tags:
   
 image: header.png
 
-readingTime: 15
+readingTime: 5
 
 draft: false
 ---
