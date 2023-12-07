@@ -577,7 +577,6 @@ All (1) contracts were verified!
 Transactions saved to: /Users/olich/tmp/solidity-foundry-template/broadcast/DeployMyToken.sol/11155111/run-latest.json
 Sensitive values saved to: /Users/olich/tmp/solidity-foundry-template/cache/DeployMyToken.sol/11155111/run-latest.json
 ```
-![Pretty cool huh!!](ok.gif)
 
 ## Conclusion
 As the blockchain landscape continues to evolve, tools like Foundry are crucial for developers seeking to build secure, efficient, and reliable smart contracts. This guide serves as an invaluable resource, whether you're a seasoned developer or just starting in the world of blockchain and smart contract development.
