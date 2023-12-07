@@ -361,7 +361,7 @@ coverage:
         coverage-files: ./lcov.info
         minimum-coverage: 100 # Set coverage threshold.
 ```
-
+You can see the example comment [here](https://github.com/olich97/solidity-foundry-template/pull/2#issuecomment-1845147545).
 > Remember not to optimize for coverage, but to optimize for [well thought-out tests](https://book.getfoundry.sh/tutorials/best-practices?highlight=coverage#best-practices-1).
 
 ### Static analysis
