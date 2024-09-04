@@ -13,7 +13,7 @@ toc: false
 {{< img src="img/bg.png" alt="Oleh Andrushko Background" sizes="(min-width: 35em) 1000px, 100vw" >}} <br>
 My name is Oleh _(friends call me Olich)_. <br>
 💻 Full Stack Engineer with a fascination for distributed systems, blockchains, and cloud development. <br>
-🔭 I'm able to write code in Rust, TypeScript, Java, C# and build frontends using React/Next.js.<br>
+🔭 I’m able to code in Rust, TypeScript, C++, C# and build frontends using React/Next.js.<br>
 🧑‍🚀 Passionate about exploring and implementing innovative tech solutions. <br>
 🗺️ Energetic, self-motivated and travel addicted.
 ***
