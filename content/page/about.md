@@ -19,6 +19,24 @@ My name is Oleh _(friends call me Olich)_. <br>
 ***
 ## 👨🏼‍💻 Technical Experience <span style="font-size:19px; font-weight: lighter;">_( {{< datediff start="2016-09-01" >}} )_ 
 
+@ Freelancing, Research & Learning, Parma, Italy _(Jan 2024 - Now ◦ {{< datediff start="2024-01-01"  >}})_
+: **University of Parma, [Project Humanita](https://www.interreg-central.eu/projects/humanita)**
+    - Architected and developed an advanced data analytics platform monitoring environmental impacts of tourism in protected areas through interactive maps and GIS integration.
+    - Designed database schema and DevOps tools and techniques to efficiently release the platform on on-premise servers.
+    - Provided technical assistance and guidance on tehcnologies and data domain.
+  
+: **AIO Blockchain Lab, Technical Advisor & CTO**
+    - Developed and deployed a community-focused cross-platform mobile app with React Native and Expo.
+    - Architected and implemented a certificate NFT minting dashboard on Polygon mainnet.
+    - Engineered and developed a secure web3 form and voting platform ([hederform.com](https://www.hederform.com)) on Hedera Hashgraph.
+
+: **MasterZxSolana Bootcamp, Learning Solana Blockchain**
+    - Successfully completed a developer exam focused on building with Solana.
+    - Developed a final MVP project Formana ([formana.olich.me](https://formana.olich.me)) that earned 4th place out of 60 for best projects.
+  
+**_Technologies used:_** Next.js, TypeScript, React Native, Solidity, Polygon, Ethereum, Solana, Hedera Hashgraph, IPFS, Firebase, Expo, Supabase, Vercel, Expo, Rust, Postresql.
+
+
 @ [True Layer](https://www.truelayer.com), Milan, Italy / London, UK
 : **Full Stack Engineer - Crypto R&D**  _(June 2022 - Oct 2023 ◦ {{< datediff start="2022-06-01" end="2023-10-09" >}})_
     - Researched, developed POCs and working prototypes based on crypto payments bleeding edge ideas
