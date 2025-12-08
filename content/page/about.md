@@ -26,9 +26,6 @@ My name is Oleh _(friends call me Olich)_. <br>
     - Provided technical assistance and guidance on tehcnologies and data domain.
   
 : **AIO Blockchain Lab, Technical Advisor & CTO**
-    - Developed and deployed a community-focused cross-platform mobile app with React Native and Expo.
-    - Architected and implemented a certificate NFT minting dashboard on Polygon mainnet.
-    - Engineered and developed a secure web3 form and voting platform ([hederform.com](https://www.hederform.com)) on Hedera Hashgraph.
 
 : **MasterZxSolana Bootcamp, Learning Solana Blockchain**
     - Successfully completed a developer exam focused on building with Solana.
